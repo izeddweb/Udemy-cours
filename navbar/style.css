@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  /* background-color: hsla(0, 0%, 50%, 0); */
+  background-color: black;
+}
+
+nav {
+  margin: auto;
+  width: 90%;
+  min-height: 9vh;
+  line-height: 9vh;
+}
+
+nav ul {
+  flex: 1;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 17px;
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -o-transition: all .6s;
+}
+nav a:hover {
+  color: rgb(5, 5, 5);
+  background-color: #fff;
+  border-radius: 7px;
+}
+/*    dynamic link */
+.style{
+  color: rgb(5, 5, 5);
+  background-color: #fff;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+section {
+  min-height: 100vh;
+}
+section .home{
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+section img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*   color: coral;
+  color: chartreuse;
+  color: chocolate;
+  color: cadetblue; */
+
+.indicator {
+  position: absolute;
+  z-index: 10;
+  background-color: coral;
+}
+.test{
+  width: 400px;
+  background-color: #13ad56;
+  height: 200px;
+  margin: 10px auto;
+}
+.slide{
+  animation: trns 2s infinite linear;
+  -webkit-animation: trns 2s infinite linear;
+}
+@keyframes trns {
+  0%{
+    opacity: .4;
+    transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+}
+  100%{
+    opacity: 1;
+    transform: translateX();
+    -webkit-transform: translateX();
+    -moz-transform: translateX();
+    -ms-transform: translateX();
+    -o-transform: translateX();
+}
+}
+
+.home .test:nth-child(1){
+  margin-top: 60px;
+}
+.home .test:nth-child(2){
+  background-color: #dc3434;
+}
+.home .test:nth-child(3){
+  background-color: rgb(147, 39, 147);
+}
+.home .test:nth-child(4){
+  background-color: #dc3;
+}
+.home .test:nth-child(5){
+  background-color: #080606;
+  margin-bottom: 60px;
+}
