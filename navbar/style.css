@@ -11,6 +11,7 @@ body {
 
 header {
   position: sticky;
+  z-index: 100;
   top: 0px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   /* background-color: hsla(0, 0%, 50%, 0); */
@@ -67,11 +68,26 @@ nav a:hover {
 
 section {
   min-height: 100vh;
+  position: relative;
 }
 section .home{
   height: 100%;
   display:flex;
   flex-direction: column;
+}
+section h4{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: 60px;
+  opacity: .7;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
 }
 
 section img {
@@ -87,13 +103,13 @@ section img {
 
 .indicator {
   position: absolute;
-  z-index: 10;
+  z-index: -10;
   background-color: coral;
 }
 .test{
   width: 400px;
   background-color: #13ad56;
-  height: 200px;
+  height: 400px;
   margin: 10px auto;
 }
 .slide{
@@ -124,6 +140,8 @@ section img {
 }
 .home .test:nth-child(2){
   background-color: #dc3434;
+  font-size: 40px;
+  text-align: center;
 }
 .home .test:nth-child(3){
   background-color: rgb(147, 39, 147);
